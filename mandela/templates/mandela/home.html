@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nelson Mandela - Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        /* South African flag background */
+        background-image: url("https://blog.cambridgeinternational.org/wp-content/uploads/9215883633_9c5008e1ed_b-650x300.jpg"); /* Replace with a sample image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff; /* White */
+        font-family: Arial, sans-serif; /* Change font to Arial */
+      }
+      /* Override Bootstrap's default link color */
+      a {
+        color: #ffcc00; /* Yellow */
+      }
+      /* Override Bootstrap's default link color when hovered */
+      a:hover {
+        color: #ff9933; /* Orange */
+      }
+      /* Center the buttons */
+      .center-buttons {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Nelson Mandela Website</h1>
+      <div class="center-buttons">
+        <p>
+          <a href="{% url 'biography' %}" class="btn btn-primary">Biography</a>
+        </p>
+        <p><a href="{% url 'quotes' %}" class="btn btn-secondary">Quotes</a></p>
+        <p><a href="{% url 'legacy' %}" class="btn btn-info">Legacy</a></p>
+      </div>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
